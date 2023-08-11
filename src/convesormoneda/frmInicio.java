@@ -191,8 +191,26 @@ public class frmInicio extends javax.swing.JFrame {
                 String ver2 = String.valueOf(f);
                 lbcambio.setText(ver2);
             break;
-            case "":
+            case "Euro a Peso":
+                double g = c.EuroPeso(cantidad);
+                String ver3 = String.valueOf(g);
+                lbcambio.setText(ver3);
+            break;
                 
+            case "Peso A Euro":
+                double pe = c.PesoEuro(cantidad);
+                String ver4 = String.valueOf(pe);
+                lbcambio.setText(ver4);
+            break;
+            case "Libra a Peso":
+                double lp = c.LibraPeso(cantidad);
+                String ver5 = String.valueOf(lp);
+                lbcambio.setText(ver5);
+            break;
+            case "Peso a Libra":
+                double pl = c.PesoLibra(cantidad);
+                String ver6 = String.valueOf(pl);
+                lbcambio.setText(ver6);
             break;    
             
             default:
